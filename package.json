@@ -1,15 +1,11 @@
 {
-	"name": "ads app",
+	"name": "ads-app",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
 	"scripts": {
 		"start": "cross-env NODE_ENV=production node server",
 		"dev": "cross-env NODE_ENV=development nodemon server",
-		"heroku-postbuild": "node server"
-	},
-	"engines": {
-		"node": "16.15.0"
 	},
 	"author": "Vitor Acacio",
 	"license": "ISC",

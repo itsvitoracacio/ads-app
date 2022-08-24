@@ -25,6 +25,14 @@ const UserSchema = new mongoose.Schema({
 		type: Date,
 		default: Date.now,
 	},
+	dept: {
+		type: String,
+		required: true,
+	},
+	role: {
+		type: String,
+		required: true,
+	},
 })
 
 module.exports = mongoose.model('User', UserSchema)

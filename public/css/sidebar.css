@@ -1,0 +1,116 @@
+.side-menu {
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--half-step);
+	width: var(--sidebar-width); /* This may cause responsiveness issues */
+	padding: var(--step);
+	border-right: var(--thin-border) solid var(--divider-color-on-bright-bg);
+	overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome */
+.side-menu::-webkit-scrollbar {
+	display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.side-menu {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.area-context {
+	display: inline-flex;
+	column-gap: var(--step);
+	width: 100%;
+	padding: var(--step);
+	border: var(--regular-border);
+	border-radius: var(--regular-radius);
+	margin-bottom: var(--double-step);
+}
+
+.area-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: var(--quarter-step);
+}
+
+.area-name {
+	font-weight: var(--font-bold);
+	font-size: var(--initial-font-size);
+}
+
+.area-specs {
+	font-size: var(--small-font-size);
+	color: var(--alt-text-color-on-bright-bg);
+}
+
+.pages-group-name {
+	font-weight: var(--font-bold);
+	display: block;
+	padding: calc(var(--step) + var(--half-step)) 0;
+	border: var(--regular-border);
+	border-radius: var(--regular-radius);
+}
+
+.pages-group-name::before {
+	content: url('/assets/right-chevron.svg');
+	display: inline-block;
+	position: relative;
+	padding-left: calc(var(--step) + var(--half-step));
+	padding-right: var(--step);
+	transition: var(--simple-transition);
+}
+
+.pages-group-name.open::before {
+	top: -1px;
+	transform: rotate(90deg);
+}
+
+.pages-group-name.closed::before {
+	top: 1px;
+	transform: rotate(0deg);
+}
+
+.pages-group.open li {
+	display: block;
+}
+
+.pages-group.closed li {
+	display: none;
+}
+
+.pages-group li {
+	margin-left: calc(var(--double-step) + var(--half-step));
+}
+
+.pages-group li a {
+	display: block;
+	background-color: transparent;
+	color: var(--alt-text-color-on-bright-bg);
+	text-decoration: none;
+	border: none;
+	padding: 0;
+
+	width: 100%;
+	text-align: left;
+	padding: var(--step);
+	padding-right: var(--double-step);
+	border: var(--regular-border);
+	border-radius: var(--regular-radius);
+	transition: var(--simple-transition);
+}
+
+.pages-group li:first-of-type {
+	margin-top: var(--quarter-step);
+}
+
+.area-context:hover,
+.pages-group-name:hover,
+.pages-group li:hover {
+	background-color: var(--hover-color-on-bright-bg);
+}
+
+/* .editType.current-place {
+	background-color: var(--hover-color-on-bright-bg);
+} */

@@ -18,4 +18,12 @@ router.get('/dashboard', ensureAuth, (req, res) => {
 	})
 })
 
+// @desc Retencao / Suporte
+// @route GET /suporte
+router.get('/retencao/suporte', ensureAuth, (req, res) => {
+	res.render('suporte', {
+		name: req.user.firstName,
+	})
+})
+
 module.exports = router

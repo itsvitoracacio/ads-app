@@ -1,0 +1,157 @@
+<section>
+	<div class='table-filters'>
+		<div class='compare-filter'>
+			<span>Comparar com:</span>
+			<select name='compare' id='compare' class='table-filter-dropdown'>
+				<option value='Não comparar' selected>Não comparar</option>
+				<option value='Mês anterior'>Mês anterior</option>
+				<option value='Ano anterior'>Ano anterior</option>
+			</select>
+		</div>
+		<div class='agent-filter'>
+			<span>Filtrar por agente:</span>
+			<select name='agent' id='agent' class='table-filter-dropdown'>
+				<option value='Todos os agentes' selected>Todos os agentes</option>
+				<option value='Julya'>Julya Carrato</option>
+				<option value='Gabriel'>Gabriel Pinho</option>
+				<option value='Lucas'>Lucas Bosa</option>
+			</select>
+		</div>
+	</div>
+	<table>
+		<colgroup>
+			<col span='3' />
+			<col span='3' class='biz-days-cols' />
+			<col span='3' class='days-off-cols' />
+			<col span='3' class='all-days-cols' />
+		</colgroup>
+		<thead>
+			<tr class='main-head-row'>
+				<td colspan='3'></td>
+				<th colspan='3' class='colgroup-begin'>Dias úteis</th>
+				<th colspan='3' class='colgroup-begin'>Fim de semana</th>
+				<th colspan='3' class='colgroup-begin table-end'>Todos os dias</th>
+			</tr>
+			<tr class='secondary-head-row'>
+				<td colspan='3'></td>
+				<th class='colgroup-begin'>TMPR</th>
+				<th class='adjust-col-width'>TMR</th>
+				<th>Tickets</th>
+				<th class='colgroup-begin'>TMPR</th>
+				<th class='adjust-col-width'>TMR</th>
+				<th>Tickets</th>
+				<th class='colgroup-begin'>TMPR</th>
+				<th class='adjust-col-width'>TMR</th>
+				<th class='table-end'>Tickets</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='month-row'>
+				<td class='field-type-button'>
+					<img src='/assets/right-chevron.svg' />
+				</td>
+				<th class='data-type-string'>Jan/2022</th>
+				<th class='data-type-string'>Todos</th>
+			</tr>
+			<tr class='month-row'>
+				<td class='field-type-button'>
+					<img src='/assets/right-chevron.svg' />
+				</td>
+				<th class='data-type-string'>Fev/2022</th>
+				<th class='data-type-string'>Todos</th>
+			</tr>
+			<tr class='month-row'>
+				<td class='field-type-button'>
+					<img src='/assets/right-chevron.svg' />
+				</td>
+				<th class='data-type-string'>Mar/2022</th>
+				<th class='data-type-string'>Todos</th>
+			</tr>
+			<tr class='month-row'>
+				<td class='field-type-button'>
+					<img src='/assets/right-chevron.svg' />
+				</td>
+				<th class='data-type-string'>Abr/2022</th>
+				<th class='data-type-string'>Todos</th>
+			</tr>
+			<tr class='month-row'>
+				<td class='field-type-button'>
+					<img src='/assets/right-chevron.svg' />
+				</td>
+				<th class='data-type-string'>Mai/2022</th>
+				<th class='data-type-string'>Todos</th>
+			</tr>
+			<tr class='month-row'>
+				<td class='field-type-button'>
+					<img src='/assets/right-chevron.svg' />
+				</td>
+				<th class='data-type-string'>Jun/2022</th>
+				<th class='data-type-string'>Todos</th>
+			</tr>
+			<tr class='month-row month-row--expanded'>
+				<td class='field-type-button'>
+					<img src='/assets/right-chevron.svg' />
+				</td>
+				<th rowspan='1' class='data-type-string'>Jul/2022</th>
+				<th rowspan='1' class='data-type-string'>Todos</th>
+				<td class='data-type-int'>7.80h</td>
+				<td class='data-type-int'>13.79h</td>
+				<td class='data-type-int'>1564</td>
+				<td class='data-type-int'>41.77h</td>
+				<td class='data-type-int'>45.66h</td>
+				<td class='data-type-int'>637</td>
+				<td class='data-type-int'>17.64h</td>
+				<td class='data-type-int'>23.01h</td>
+				<td class='data-type-int table-end'>2201</td>
+			</tr>
+			<tr class='agent-row'>
+				<td colspan='2'></td>
+				<th class='agent-row-head data-type-string'>
+					<img src='/assets/area-icon.svg' alt='Julya' class='agent-pic' />
+					<span>Julya</span>
+				</th>
+				<td class='data-type-int'>9.73h</td>
+				<td class='data-type-int'>17.92h</td>
+				<td class='data-type-int'>36.7%</td>
+				<td class='data-type-int'>40.75h</td>
+				<td class='data-type-int'>44.39h</td>
+				<td class='data-type-int'>32.3%</td>
+				<td class='data-type-int'>17.92h</td>
+				<td class='data-type-int'>24.91h</td>
+				<td class='data-type-int table-end'>35.4%</td>
+			</tr>
+			<tr class='agent-row'>
+				<td colspan='2'></td>
+				<th class='agent-row-head data-type-string'>
+					<img src='/assets/area-icon.svg' alt='Gabriel' class='agent-pic' />
+					<span>Gabriel</span>
+				</th>
+				<td class='data-type-int'>6.91h</td>
+				<td class='data-type-int'>9.96h</td>
+				<td class='data-type-int'>58.2%</td>
+				<td class='data-type-int'>42.49h</td>
+				<td class='data-type-int'>44.23h</td>
+				<td class='data-type-int'>61.4%</td>
+				<td class='data-type-int'>17.59h</td>
+				<td class='data-type-int'>20.25h</td>
+				<td class='data-type-int table-end'>59.2%</td>
+			</tr>
+			<tr class='agent-row'>
+				<td colspan='2'></td>
+				<th class='agent-row-head data-type-string'>
+					<img src='/assets/area-icon.svg' alt='Julya' class='agent-pic' />
+					<span>Lucas</span>
+				</th>
+				<td class='data-type-int'>4.16h</td>
+				<td class='data-type-int'>27.95h</td>
+				<td class='data-type-int'>5.1%</td>
+				<td class='data-type-int'>40.08h</td>
+				<td class='data-type-int'>66.22h</td>
+				<td class='data-type-int'>6.3%</td>
+				<td class='data-type-int'>16.24h</td>
+				<td class='data-type-int'>40.81h</td>
+				<td class='data-type-int table-end'>5.4%</td>
+			</tr>
+		</tbody>
+	</table>
+</section>

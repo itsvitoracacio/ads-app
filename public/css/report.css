@@ -1,0 +1,116 @@
+main {
+	/* height: unset; */
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 0.9rem;
+	width: 90%;
+	border: 1px solid #eef1f0;
+}
+
+/* Cell sizing */
+th,
+td {
+	padding: 10px;
+	/* border: 1px solid red; */
+	vertical-align: middle;
+	/* line-height: 1; */
+}
+
+.month-row th {
+	padding: 15px 10px;
+}
+
+.colgroup-begin {
+	padding-left: 3rem;
+}
+
+.table-end {
+	padding-right: 1.5rem;
+}
+
+.agent-row-head {
+	display: flex;
+	align-items: center;
+	column-gap: 0.3rem;
+}
+
+.agent-pic {
+	width: 1.5rem;
+}
+
+/* Cell borders */
+.month-row {
+	border-top: 1px solid #f5f5f5;
+}
+
+.main-head-row,
+.secondary-head-row {
+	background-color: #fbfbfb;
+}
+
+.month-row--expanded {
+	background-color: #fbfbfb;
+}
+
+/* Cell font */
+th {
+	font-weight: 600;
+}
+
+th {
+	color: rgba(62, 62, 62, 0.75);
+}
+
+.month-row td {
+	color: rgb(62, 62, 62);
+}
+
+td {
+	font-family: monospace;
+	color: rgba(62, 62, 62, 0.75);
+}
+
+.agent-row th {
+	font-weight: normal;
+}
+
+/* Cell content alignment */
+.data-type-string {
+	text-align: left;
+}
+
+.data-type-int {
+	text-align: right;
+}
+
+/* Outside the table */
+.table-filters {
+	display: flex;
+	justify-content: flex-start;
+	column-gap: 2rem;
+	width: 90%;
+	padding: 1rem 0;
+}
+
+.table-filter-dropdown {
+	padding: 0.5rem 0.5rem;
+	margin-left: 0.25rem;
+	font-weight: 600;
+	border-radius: 5px;
+	color: rgb(62, 62, 62);
+
+	/* for Firefox */
+	-moz-appearance: none;
+	/* for Safari, Chrome, Opera */
+	-webkit-appearance: none;
+}
